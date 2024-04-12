@@ -15,3 +15,12 @@ Enter a length in centimeters: 32
 32 centimeters is 1 feet and 1 inches
 ```
 """
+import math
+
+a = int(input("Enter a length in centimeters so I can convert it into feet and inches\n"))
+
+feet = int(a // 30.48)
+inches = float((a - feet * 30.48) / 2.54)
+
+
+print(f"{a} cm is {feet} feet and {inches} inches")

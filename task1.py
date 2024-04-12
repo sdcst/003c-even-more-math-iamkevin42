@@ -14,7 +14,18 @@ Enter actual : 9
 The percent difference is -10.0%
 
 Enter expected: 12
-Enter actual : 14
+Enter actual : 14   
 The percent difference is 16.67%
 ```
 '''
+
+a = float(input("Enter expected number\n"))
+
+b = float(input("Now enter the actual number\n"))
+
+
+increase = a - b 
+
+percentageincrease = increase / b
+c = percentageincrease * 100
+print(c)

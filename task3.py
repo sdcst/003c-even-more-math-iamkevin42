@@ -27,4 +27,23 @@ Enter the length of side c: 12
 Your half perimeter is 14.5
 The area of your triangle is 29.342
 '''
+import math
+
+
+a =float(input("Length of the first side of the triangle\n")) 
+b= float(input("Length of the second side of the triangle\n")) 
+c = float(input("Length of the third side of the triangle\n")) 
+
+s = (a + b + c) / 2
+
+
+area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+
+rs = round(s,2)
+ra=round(area,3)
+
+
+print(f"Your half perimeter is {s}")
+
+print(f"The area of your triangle is {ra}")
 

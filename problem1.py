@@ -3,11 +3,9 @@
 # Canada Income Tax Calculator part I
 
 '''
-It's tax season!  Nobody loves doing taxes, so EVERYONE uses computers to help them.  We will use
-Python to determine Federal and Provincial Income Tax.
+It's tax season!  Nobody loves doing taxes, so EVERYONE uses computers to help them.  We will use Python to determine Federal and Provincial Income Tax.
 
-The Canadian income tax system is a tiered system, which means you pay different percentages of
-your income for different parts of your income.
+The Canadian income tax system is a tiered system, which means you pay different percentages of your income for different parts of your income.
 You pay 15% tax on the first 49020 you earn.  If you earn more than this amount, you pay
 20.5% on amounts over 49020 that are less than 98040
 26% on amounts over 98040 but less than 151978
@@ -19,5 +17,12 @@ Write a program to calculate the amount of Federal Income Tax for people who ear
 Example:
 Enter your income: 125000
 Your federal income tax is: 24411.7
-
 '''
+
+a = float(input("Please enter a range of money over 100,000 but less than 150,000 so I can calculate your federal taxes\n"))
+tax = 0.26
+
+federaltax = a * tax
+rft=round(federaltax,2)
+
+print(f"Your federal taxes are ${rft}")
